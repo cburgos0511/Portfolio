@@ -1,0 +1,126 @@
+.section__about {
+	position: relative;
+	height: 112vh;
+	opacity: 1;
+	background: #1f1c2c;
+}
+
+.editor {
+	margin-top: 5rem;
+	position: relative;
+	height: auto;
+}
+
+.code__wrap {
+	font-size: 1.3rem;
+	font-weight: 400;
+	margin: 2px;
+}
+
+.code__l {
+	display: block;
+	z-index: 1;
+	position: relative;
+	padding-left: 22%;
+	height: 1.8rem;
+}
+
+.code__l:hover {
+	background: #3439477e;
+}
+
+.comment {
+	font-family: Roboto Mono, Courier New, Courier, monospace;
+	color: #a3a3a386;
+}
+
+.dots {
+	font-family: Roboto Mono, Courier New, Courier, monospace;
+	color: #a7a7a74b;
+	letter-spacing: 4px;
+	font-size: 0.9rem;
+}
+
+.methods {
+	font-family: Roboto Mono, Courier New, Courier, monospace;
+	color: #2e2bb8;
+}
+.proname {
+	font-family: Roboto Mono, Courier New, Courier, monospace;
+	color: #eeff31;
+}
+
+.regular {
+	font-family: Roboto Mono, Courier New, Courier, monospace;
+	color: #f9f9f9;
+}
+
+.scope {
+	font-family: Roboto Mono, Courier New, Courier, monospace;
+	color: #e3244c;
+	display: inline;
+}
+
+.var {
+	font-family: Roboto Mono, Courier New, Courier, monospace;
+	color: #24e394;
+}
+
+.number {
+	font-family: Roboto Mono, Courier New, Courier, monospace;
+	color: #e39d24;
+}
+
+.string {
+	font-family: Roboto Mono, Courier New, Courier, monospace;
+	color: #24e33a;
+}
+
+.code__num {
+	font-family: Roboto Mono, Courier New, Courier, monospace;
+	font-size: 1.2rem;
+	position: absolute;
+	left: 18%;
+	color: #4d4d4d;
+	padding-right: 5px;
+}
+
+.about__me__info {
+	max-width: 950px;
+	box-shadow: 0 0 1.2rem rgba(0, 0, 0, 1);
+	padding: 45px;
+	position: absolute;
+	top: 29%;
+	left: 37%;
+	z-index: 6;
+	background: #2c2d2e;
+	opacity: 0;
+}
+
+.about__me__info p {
+	color: rgb(233, 233, 233);
+	font-size: 1.4rem;
+	font-weight: 200;
+	line-height: 2.2rem;
+}
+
+.dot__container {
+	position: absolute;
+	top: 55%;
+	right: 10%;
+	opacity: 0;
+}
+
+.cursor {
+	border-right: 1px solid #bdbdbe;
+	animation: next 1s infinite normal;
+}
+
+@keyframes next {
+	from {
+		border-right-color: #bdbdbe;
+	}
+	to {
+		border-right-color: transparent;
+	}
+}

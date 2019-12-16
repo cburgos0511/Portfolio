@@ -1,0 +1,74 @@
+.contact__section {
+	position: relative;
+	height: 85vh;
+}
+
+/* .contact__text {
+	position: absolute;
+	left: 50%;
+	top: 10%;
+	transform: translate(-50%);
+}
+
+.contact__text h1 {
+	width: auto;
+	height: auto;
+	color: #929292;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	position: relative;
+	top: 50px;
+} */
+.contain {
+	position: absolute;
+	top: 30%;
+	left: 22%;
+}
+.contact__container {
+	display: grid;
+	position: relative;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 60%;
+	height: 10%;
+	left: 50px;
+	grid-gap: 60px;
+	opacity: 0;
+}
+.find__me {
+	font-size: 1.8em;
+	color: var(--main-font-color);
+	position: relative;
+	left: -50px;
+	opacity: 0;
+}
+.contact__container h2 {
+	font-size: 1rem;
+}
+.contact__container h2 a {
+	text-decoration: none;
+	color: var(--timeline);
+	font-size: 1.4em;
+}
+
+.get__in__touch {
+	text-transform: uppercase;
+	border: none;
+	background: linear-gradient(to right, rgb(32, 121, 255), rgb(35, 101, 175));
+	width: 10em;
+	height: 2em;
+	font-weight: 400;
+	text-align: center;
+	margin: 0;
+	padding-top: 0.7em;
+	border-radius: 50px;
+	color: rgb(255, 255, 255);
+	font-size: 1.2em;
+	box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.1);
+	transition: all 200ms ease-in-out;
+	opacity: 0;
+}
+.get__in__touch:hover {
+	transform: scale(1.1);
+	opacity: 0.8;
+}

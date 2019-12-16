@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="./styles/index.css" />
+		<link rel="stylesheet" href="./styles/about.css" />
+		<link rel="stylesheet" href="./styles/navbar.css" />
+		<link rel="stylesheet" href="./styles/skills.css" />
+		<link rel="stylesheet" href="./styles/contact.css" />
+		<!--  -->
+
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,700&display=swap" rel="stylesheet" />
+		<!--  -->
+
+		<!-- GSAP -->
+		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+		<!--  -->
+
+		<title>Cruz Burgos</title>
+	</head>
+	<body id="body">
+		<div class="nav__opened" id="visible__menu">
+			<div class="nav__btn close__btn" id="close__menu">Close</div>
+			<ul id="menu__list">
+				<li><a id="about" class="nav__anchor" href="#sec__about">About</a></li>
+				<li><a id="skill" class="nav__anchor" href="#teleport__skill">Projects</a></li>
+				<li><a id="contact" class="nav__anchor" href="#contact__sec">Contact</a></li>
+			</ul>
+		</div>
+		<section class="section__welcome" id="welcome">
+			<div class="timeline"><address></address></div>
+
+			<nav id="nav__bar">
+				<div class="logo">
+					<h1><a href="#welcome">Cruz Burgos</a></h1>
+				</div>
+				<div class="nav__menu">
+					<div class="nav__btn" id="open__menu">Menu</div>
+				</div>
+			</nav>
+			<div class="hero">
+				<h1 class="hero__line__one" id="title">
+					Hi, my name is
+					<span class="my__name">Cruz Burgos</span>
+				</h1>
+
+				<h1 class="hero__line__two">I'm a <i>self</i> taught developer</h1>
+
+				<h1 class="hero__line__three">who enjoys <i class="_text"></i></h1>
+			</div>
+		</section>
+		<section id="teleport__skill" class="skills__section">
+			<div class="skill__text">
+				<h1 class="project sec__title">Projects <span class="slash">/</span>></h1>
+			</div>
+			<div class="skills__container">
+				<div class="skill__row">
+					<div id="corre__modal" data-tilt class="project__wrapper corre__wrap">
+						<h2 class="title project__corre">Corre</h2>
+						<img src="/images/Corre.png" alt="Corre Application" />
+					</div>
+					<div id="portfolio__modal" data-tilt class="project__wrapper portfolio__wrap">
+						<h2 class="title project__portfolio">Portfolio</h2>
+						<img src="images/portfolio.png" alt="" />
+					</div>
+					<div id="ml__modal" data-tilt class="project__wrapper pose__wrap">
+						<h2 class="title project__pose">Pose Detection</h2>
+						<img src="/images/pose.png" alt="" />
+					</div>
+				</div>
+				<div></div>
+			</div>
+			<div class="detail__view closed" id="corre__details">
+				<div class="proj__detail" id="corre__det">
+					<div class="detail__container">
+						<div class="arrow" id="close__corre"></div>
+
+						<h2 class="detail__tech">
+							<span class="techies">#React </span><span class="techies">#GraphQL </span><span class="techies">#ApolloClient </span
+							><span class="techies">#MongoDB </span><span class="techies">#Express </span><span class="techies">#Node</span>
+						</h2>
+						<h1 class="detail__title">Corre</h1>
+						<p class="detail__para">
+							In 2011, I started running in preparation for the military. I quickly captivated by all aspects of running. In the last 8 years I have ran over 80
+							different races including 2 half-marathons and a 50 mile race in Guam. The application allows you to view group running goals and their detail if
+							you are not a user. If you singup not only are you allowed to view goals you can join and create goals. Users can view their group goal progression
+							own personal running goals. The Idea for this app was to establish a robust backend using MongoDB and use GraphQL to query the data. Establishing
+							the backend was challenging but very satisfying ones it was complete. I used reacts context to maintain the apps global state. The majority of the
+							react is written using the Hooks API, because of its flexibly.
+						</p>
+						<button class="visit">Visit</button>
+					</div>
+				</div>
+			</div>
+			<div class="detail__view closed" id="portfolio__details">
+				<div class="proj__detail" id="portfolio__det">
+					<div class="detail__container">
+						<div class="arrow" id="close__portfolio"></div>
+
+						<h2 class="detail__tech">
+							<span class="techies">#HTML </span><span class="techies">#CSS </span><span class="techies">#JavaScript </span><span class="techies">#jQuery </span
+							><span class="techies">#Tilt.js </span><span class="techies">#GreenSock</span>
+						</h2>
+						<h1 class="detail__title">Personal Portfolio</h1>
+						<p class="detail__para">
+							This project means a lot to me because it was my first HTML, CSS and JavaScript project. I wanted to create a site that would give individuals the
+							opportunity to get a sense of my personality and skills. The project allows the viewer to get more detail on each project I've created and a link
+							to the projects source code. The project uses GreenSock to perform some complex animation and CSS keyframes for some simpler ones. I am always
+							modifying this project based on new skills I acquire.
+						</p>
+						<button class="visit">Visit</button>
+					</div>
+				</div>
+			</div>
+			<div class="detail__view closed" id="ml__details">
+				<div class="proj__detail" id="ml__det">
+					<div class="detail__container">
+						<div class="arrow" id="close__ml"></div>
+
+						<h2 class="detail__tech">
+							<span class="techies">#HTML </span><span class="techies">#CSS </span><span class="techies">#JavaScript </span><span class="techies">#p5.js </span
+							><span class="techies">#ML5.js(MobileNet) </span><span class="techies">#Node</span>
+						</h2>
+						<h1 class="detail__title">Image Recognition Game</h1>
+						<p class="detail__para">
+							Machine learning and A.I are some things that I would love to do in the future. This application uses ML5's feature extractor. This class allows
+							you to extract features of an image via a pre-trained model and re-train that model with new data. Using p5.js I created an HTML video that uses
+							the video feed from the webcam. The user can capture and train three different images. The first image will be used to perform a jump in the game,
+							the second image will be to shoot one of the incoming obstacles and the final image is to do nothing. Once the model is trained we can classify and
+							finally play the game. This project was extremely enjoyable. Especially as it showed me the potential of machine learning. Specifically, image
+							classification.
+						</p>
+						<button class="visit">Visit</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section__about" id="sec__about">
+			<div class="about__text">
+				<h1 class="sec__title">About <span class="slash">/</span>></h1>
+			</div>
+
+			<div class="editor">
+				<div class="code__wrap">
+					<div class="code__l">
+						<div class="code__num">01</div>
+						<span class="methods">class </span><span class="proname">Cruz Burgos</span><span class="regular"> &#8201; {</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">02</div>
+						<div class="comment"><span class="dots">..</span>// I'm driven and love to be challenged</div>
+					</div>
+					<div class="code__l">
+						<div class="code__num">03</div>
+						<div class="comment"><span class="dots">..</span>// My skills are continually expanding</div>
+					</div>
+					<div class="code__l">
+						<div class="code__num">04</div>
+						<span class="dots">..</span><span class="methods">constructor</span><span class="regular">( )&#8201; {</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">05</div>
+						<span class="dots">....</span><span class="scope">this</span><span class="regular">.</span><span class="var">name</span>
+						<span class="scope"> = </span> <span class="string">'Cruz B. Burgos'</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">06</div>
+						<span class="dots">....</span><span class="scope">this</span><span class="regular">.</span><span class="var">minutesAlive</span>
+						<span class="scope"> = </span> <span class="number">14,085,520</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">07</div>
+						<span class="dots">....</span><span class="scope">this</span><span class="regular">.</span><span class="var">email</span>
+						<span class="scope"> = </span> <span class="string">'cburgos0511@gmail.com'</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">08</div>
+						<span class="dots">..</span> <span class="regular">}</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">09</div>
+						<span class="dots">..</span><span class="proname">myStrory</span><span class="regular">()&#8201;{</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">10</div>
+						<span class="dots">....</span> <span class="methods">return </span
+						><span class="string">'I was born in Puerto Rico; A place where there is little opportunity to build </span>
+					</div>
+					<div class="code__l">
+						<span class="string">a bright future. I was raised from the age of three in a single parent household. At the age</span>
+					</div>
+					<div class="code__l">
+						<span class="string">of fourteen I decided to move to the United States with a family member to pursue a better</span>
+					</div>
+					<div class="code__l">
+						<span class="string"> education and future. After graduating from high school I joined theU.S Navy, as I saw that </span>
+					</div>
+					<div class="code__l">
+						<span class="string">it was my best avenue into a college education. Within my four and half year contract in the </span>
+					</div>
+					<div class="code__l">
+						<span class="string">Armed Forces. I was put in several leadership positions wherein I learned to communicate </span>
+					</div>
+					<div class="code__l">
+						<span class="string">effectively, and thrive when challenged. After the military I began to attend college. While </span>
+					</div>
+
+					<div class="code__l">
+						<span class="string"> in college I decided to teach myselfprogramming to get a head start in my career. After two </span>
+					</div>
+					<div class="code__l">
+						<span class="string">months of hard work teaching myself how toprogram. I decided to apply for an internship </span>
+					</div>
+					<div class="code__l">
+						<span class="string">position at Aviture. I was accepted for the position, and have been working for Aviture </span>
+					</div>
+					<div class="code__l">
+						<span class="string">while taking on 15+ credit hours each semester, continuing to teach myself React, Graph QL,</span>
+					</div>
+					<div class="code__l">
+						<span class="string">and more, and working on personal projects.</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">11</div>
+						<span class="dots">..</span><span class="regular">}</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">12</div>
+						<span class="dots">..</span><span class="proname">workExperience</span><span class="regular">() &#8201; {</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">13</div>
+						<span class="dots">....</span> <span class="methods">return </span><span class="regular">[</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">14</div>
+						<span class="dots">......</span
+						><span class="regular">{ <span class="string">'2011-2015'</span> : <span class="string">'United States Navy'</span> },</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">15</div>
+						<span class="dots">......</span><span class="regular">{ <span class="string">'2019-now'</span> : <span class="string">'Aviture'</span> },</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">16</div>
+						<span class="dots">....</span><span class="regular">]</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">17</div>
+						<span class="dots">..</span><span class="regular">}</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">18</div>
+						<span class="dots">..</span><span class="proname">skills</span><span class="regular">()&#8201;{</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">19</div>
+						<span class="dots">....</span> <span class="methods">return </span
+						><span class="regular"
+							>[
+							<span class="string">
+								'HTML/CSS/JS', 'React', 'GraphQL', 'ApolloClient', 'MongoDB', 'p5.js', 'ML5.js',
+							</span>
+						</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">20</div>
+						<span class="string">'GreenSock', 'Java', 'jQuery', 'Node.js', 'Bootstrap/Material/Design', 'SASS', 'npm/yarn',</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">21</div>
+						<span class="string">'GIT/Sourcetree' <span class="cursor"> </span></span>&#8201;&#8201;<span class="regular">]</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">22</div>
+						<span class="dots">..</span><span class="regular">}</span>
+					</div>
+					<div class="code__l">
+						<div class="code__num">22</div>
+						<span class="regular">}</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact__section" id="contact__sec">
+			<div class="contact__text">
+				<h1 class="contact sec__title">Contact <span class="slash">/</span>></h1>
+			</div>
+			<div class="contain">
+				<div class="contact__info">
+					<h3 class="find__me">Find me on:</h3>
+					<div class="contact__container">
+						<h2><a href="cburgos0511@gmail.com">cburgos0511@gmail.com</a></h2>
+						<h2><a href="https://github.com/cburgos0511">github.com/cburgos0511</a></h2>
+						<h2><a href="https://www.linkedin.com/in/cruz-burgos-976611182/">in/cburgi0511</a></h2>
+					</div>
+					<div class="get__in__touch">Get in touch</div>
+				</div>
+			</div>
+		</section>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+		<script src="./scripts/gsap.js"></script>
+		<script src="./scripts/scripts.js"></script>
+		<script src="./scripts/scrollMagic.js"></script>
+		<script src="./scripts/textScramble.js"></script>
+	</body>
+</html>
+<!--  -->
