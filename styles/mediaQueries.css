@@ -1,0 +1,114 @@
+@media screen and (max-width: 768px) {
+	.hero {
+		position: relative;
+		font-weight: 700;
+		top: 40%;
+		height: 15%;
+		padding: 0 10rem;
+		width: 600px;
+		font-size: 1.6rem;
+		z-index: 10;
+	}
+	.my__name {
+		font-size: 2.2rem;
+		text-shadow: 3px 5px 3px rgba(63, 63, 63, 0.247);
+	}
+
+	.welcome h1 {
+		position: absolute;
+		font-size: 3rem;
+		top: 41%;
+		left: 15%;
+		letter-spacing: 2rem;
+		background: #fff;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.timeline {
+		height: 412%;
+	}
+	.sec__title::before {
+		left: -7%;
+	}
+	.corre__wrap {
+		width: 65%;
+		left: 15%;
+		top: 15%;
+	}
+	.portfolio__wrap,
+	.pose__wrap {
+		width: 22%;
+	}
+
+	.portfolio__wrap {
+		top: 55%;
+		right: 35%;
+	}
+	.pose__wrap {
+		top: 35%;
+		right: 5%;
+	}
+	.project__pose {
+		top: 10%;
+	}
+
+	.project__corre {
+		top: 10%;
+	}
+
+	.project__portfolio {
+		top: 30%;
+		left: -18%;
+	}
+	.nav__opened ul li a {
+		font-size: 5.5rem;
+	}
+
+	.proj__detail h1 {
+		font-size: 1.9rem;
+	}
+
+	.proj__detail h2 {
+		font-size: 1.2rem;
+	}
+
+	.proj__detail p {
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.corre__wrap {
+		width: 75%;
+		left: 25%;
+		top: 25%;
+	}
+	.project__corre {
+		top: 8%;
+	}
+
+	.project__portfolio {
+		top: 35%;
+		width: 80%;
+		left: -24%;
+	}
+
+	.project__pose {
+		width: 80%;
+		left: -20%;
+	}
+	.big__sor {
+		position: relative;
+		width: auto;
+		height: auto;
+	}
+	.timeline {
+		height: 394%;
+	}
+
+	.sec__title::before {
+		left: -6.5%;
+	}
+}

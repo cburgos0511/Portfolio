@@ -1,6 +1,7 @@
 .section__about {
 	position: relative;
-	height: 112vh;
+	height: 130%;
+	width: 100%;
 	opacity: 1;
 	background: #1f1c2c;
 }
@@ -9,6 +10,7 @@
 	margin-top: 5rem;
 	position: relative;
 	height: auto;
+	line-height: 150%;
 }
 
 .code__wrap {
@@ -76,6 +78,11 @@
 	color: #24e33a;
 }
 
+.big__sor {
+	position: relative;
+	width: auto;
+	height: auto;
+}
 .code__num {
 	font-family: Roboto Mono, Courier New, Courier, monospace;
 	font-size: 1.2rem;

@@ -3,7 +3,7 @@
 .skills__section {
 	position: relative;
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 }
 .skill__detail__open {
 	background-color: #00000028;
@@ -61,6 +61,7 @@
 	left: 30%;
 	z-index: 5;
 }
+
 .title {
 	transform: translateZ(50px) scale(0.7);
 }
@@ -139,7 +140,7 @@
 .proj__detail {
 	position: fixed;
 	background: var(--main-bg-color);
-	width: 30vw;
+	width: 40%;
 	right: 0;
 	top: 0;
 	height: 100%;
