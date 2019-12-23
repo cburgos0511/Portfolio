@@ -121,6 +121,7 @@ window.addEventListener("scroll", () => {
 	var scrollTop = $(window).scrollTop(),
 		elementOffset = $(".contact").offset().top,
 		distance = elementOffset - scrollTop;
+
 	if (scrollContact === true) {
 		return;
 	} else {
@@ -152,7 +153,7 @@ window.addEventListener("scroll", () => {
 	if (scrollContContain === true) {
 		return;
 	} else {
-		if (Math.ceil(distance) <= 776) {
+		if (Math.ceil(distance) <= 2300) {
 			gsap.timeline()
 				.to(".contact__container", { opacity: 1, duration: 1.8, x: -50 })
 				.to(".get__in__touch", { opacity: 1, duration: 1.8 }, "-=1.8");

@@ -41,7 +41,7 @@
 	color: var(--main-font-color);
 	position: relative;
 	left: -50px;
-	opacity: 0;
+	opacity: 1;
 	font-weight: 100;
 }
 .contact__container h2 {

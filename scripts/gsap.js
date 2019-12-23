@@ -9,16 +9,32 @@ tl.from("#nav__bar", { opacity: 0, duration: 2.8, delay: 1, y: -30 });
 
 let tlMenu = gsap.timeline();
 
-document.getElementById("open__menu").onclick = () => {
-	tlMenu
+function menuAnimation() {
+	let windowW = $(window).width();
+	if (windowW < 400) {
+		document.getElementById("open__menu").onclick = () => {
+			tlMenu
 
-		.to("#open__menu", { opacity: 0, duration: 0.4 })
-		.to(".nav__opened", { opacity: 1, duration: 0.5, scaleY: 1, height: "100vh" }, "-=.2")
-		.from("#about", { duration: 1.2, opacity: 0, x: -500, ease: "elastic.out(1, 0.6)" }, "+=0.09")
-		.from("#skill", { duration: 1.2, opacity: 0, x: -500, ease: "elastic.out(1, 0.6)" }, "-=1")
-		.from("#contact", { duration: 1.2, opacity: 0, x: -500, ease: "elastic.out(1, 0.6)" }, "-=1")
-		.from("#close__menu", { duration: 1.5, opacity: 0, y: -5 }, "-=2.5");
-};
+				.to("#open__menu", { opacity: 0, duration: 0.4 })
+				.to(".nav__opened", { opacity: 1, duration: 0.5, scaleY: 1, height: "787px" }, "-=.2")
+				.from("#about", { duration: 1.2, opacity: 0, x: -500, ease: "elastic.out(1, 0.6)" }, "+=0.09")
+				.from("#skill", { duration: 1.2, opacity: 0, x: -500, ease: "elastic.out(1, 0.6)" }, "-=1")
+				.from("#contact", { duration: 1.2, opacity: 0, x: -500, ease: "elastic.out(1, 0.6)" }, "-=1")
+				.from("#close__menu", { duration: 1.5, opacity: 0, y: -5 }, "-=2.5");
+		};
+	} else {
+	}
+	document.getElementById("open__menu").onclick = () => {
+		tlMenu
+
+			.to("#open__menu", { opacity: 0, duration: 0.4 })
+			.to(".nav__opened", { opacity: 1, duration: 0.5, scaleY: 1, height: "100vh" }, "-=.2")
+			.from("#about", { duration: 1.2, opacity: 0, x: -500, ease: "elastic.out(1, 0.6)" }, "+=0.09")
+			.from("#skill", { duration: 1.2, opacity: 0, x: -500, ease: "elastic.out(1, 0.6)" }, "-=1")
+			.from("#contact", { duration: 1.2, opacity: 0, x: -500, ease: "elastic.out(1, 0.6)" }, "-=1")
+			.from("#close__menu", { duration: 1.5, opacity: 0, y: -5 }, "-=2.5");
+	};
+}
 
 document.getElementById("close__menu").onclick = () => {
 	tlMenu
@@ -44,8 +60,6 @@ $(document).mousemove(function(e) {
 let popup = $(".grid__item a");
 
 popup.mouseenter(() => {
-	console.log("IN");
-
 	anime({
 		targets: ".popup",
 		scaleX: 1,
@@ -53,8 +67,6 @@ popup.mouseenter(() => {
 	});
 });
 popup.mouseleave(() => {
-	console.log("OUT");
-
 	anime({
 		targets: ".popup",
 		scaleX: 0,
@@ -63,3 +75,5 @@ popup.mouseleave(() => {
 });
 
 /* Menu */
+
+menuAnimation();
