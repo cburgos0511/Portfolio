@@ -20,12 +20,13 @@ nav {
 .logo a {
 	text-decoration: none;
 	color: var(--main-font-color);
+	font-weight: 100;
 }
 
 .nav__menu {
 	display: inline-block;
 	padding: 1.6rem 6rem;
-	font-weight: 700;
+	font-weight: 100;
 }
 
 .nav__btn {
@@ -82,20 +83,6 @@ nav {
 	list-style: none;
 }
 
-/* .menu__lines {
-	position: absolute;
-	width: 30px;
-	height: 5px;
-	background: transparent;
-	top: 2.2rem;
-	right: 9.7rem;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	transition: all 0.5s ease;
-}
-.menu__lines:hover {
-	background: black;
-} */
 .nav__opened ul li a {
 	position: relative;
 	font-size: 9.5rem;
@@ -105,7 +92,7 @@ nav {
 	color: var(--font-color-white);
 	text-decoration: none;
 	text-transform: uppercase;
-	/* text-shadow: 2rem, 1rem 0.8rem rgba(0, 0, 0, 0.9); */
+	font-family: "Cormorant Garamond", serif;
 	color: white;
 	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 	transition: all 0.2s ease-out;

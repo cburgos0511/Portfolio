@@ -1,28 +1,12 @@
-let scrollAboutExec,
+let scrollAbout,
 	scrollProj,
 	scrollCorreWrap,
 	scrollPortWrap,
-	scrollPoseWrap,
 	scrollContact,
 	scrollFindMe,
+	scrollGridTwo,
+	scrollGridThree,
 	scrollContContain = false;
-
-window.addEventListener("scroll", () => {
-	let tlAbout = gsap.timeline();
-	const scrollY = window.scrollY;
-
-	if (scrollAboutExec === true) {
-		return;
-	} else {
-		if (Math.ceil(scrollY) >= 450) {
-			tlAbout
-				.to(".about__text", { opacity: 1, duration: 1 })
-				.to(".about__me__info", { opacity: 1, duration: 1, x: "-25%" })
-				.to(".dot__container", { opacity: 1, duration: 1 });
-			scrollAboutExec = true;
-		}
-	}
-});
 
 window.addEventListener("scroll", () => {
 	var scrollTop = $(window).scrollTop(),
@@ -32,8 +16,8 @@ window.addEventListener("scroll", () => {
 	if (scrollProj === true) {
 		return;
 	} else {
-		if (Math.ceil(distance) <= 950) {
-			gsap.to(".project", { opacity: 1, duration: 1.8 });
+		if (Math.ceil(distance) <= 970) {
+			gsap.to(".project", { opacity: 1, duration: 1 });
 			scrollProj = true;
 		}
 	}
@@ -41,14 +25,15 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("scroll", () => {
 	var scrollTop = $(window).scrollTop(),
-		elementOffset = $(".corre__wrap").offset().top,
+		elementOffset = $("#checkout").offset().top,
 		distance = elementOffset - scrollTop;
+
 	if (scrollCorreWrap === true) {
 		return;
 	} else {
-		if (Math.ceil(distance) <= 884) {
+		if (Math.ceil(distance) <= 784) {
 			let tl = gsap.timeline();
-			tl.to(".corre__wrap", { opacity: 1, duration: 1.8, x: 10 });
+			tl.to("#checkout", { opacity: 1, duration: 1.8 });
 			scrollCorreWrap = true;
 		}
 	}
@@ -56,27 +41,77 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("scroll", () => {
 	var scrollTop = $(window).scrollTop(),
-		elementOffset = $(".portfolio__wrap").offset().top,
+		elementOffset = $("#first__grid").offset().top,
 		distance = elementOffset - scrollTop;
 	if (scrollPortWrap === true) {
 		return;
 	} else {
 		if (Math.ceil(distance) <= 753) {
-			gsap.to(".portfolio__wrap", { opacity: 1, duration: 1.8, x: 10 });
+			tl = gsap.timeline();
+			tl.to("#first__grid", { opacity: 1, duration: 1 }).to(".stagger__one", 1, { opacity: 1, stagger: 0.15, duration: 1 }, "-=.5");
 			scrollPortWrap = true;
 		}
 	}
 });
+
 window.addEventListener("scroll", () => {
 	var scrollTop = $(window).scrollTop(),
-		elementOffset = $(".pose__wrap").offset().top,
+		elementOffset = $("#second__grid").offset().top,
 		distance = elementOffset - scrollTop;
-	if (scrollPoseWrap === true) {
+	if (scrollGridTwo === true) {
 		return;
 	} else {
-		if (Math.ceil(distance) <= 861) {
-			gsap.to(".pose__wrap", { opacity: 1, duration: 1.8, x: 10 });
-			scrollPoseWrap = false;
+		if (Math.ceil(distance) <= 753) {
+			tl = gsap.timeline();
+			tl.to("#second__grid", { opacity: 1, duration: 1 }).to(".stagger__two", 1, { opacity: 1, stagger: 0.15, duration: 1 }, "-=.5");
+			scrollGridTwo = true;
+		}
+	}
+});
+
+window.addEventListener("scroll", () => {
+	var scrollTop = $(window).scrollTop(),
+		elementOffset = $("#third__grid").offset().top,
+		distance = elementOffset - scrollTop;
+	if (scrollGridThree === true) {
+		return;
+	} else {
+		if (Math.ceil(distance) <= 600) {
+			tl = gsap.timeline();
+			tl.to("#third__grid", { opacity: 1, duration: 1 }).to(".stagger__three", 1, { opacity: 1, stagger: 0.15, duration: 1 }, "-=.5");
+			scrollGridThree = true;
+		}
+	}
+});
+
+/* ABOUT */
+window.addEventListener("scroll", () => {
+	var scrollTop = $(window).scrollTop(),
+		elementOffset = $(".sec__title").offset().top,
+		distance = elementOffset - scrollTop;
+
+	let evens = [];
+	let odds = [];
+	let arr = document.querySelectorAll(".code__l");
+
+	for (let i = 0; i < arr.length; i++) {
+		if (i % 2 === 0) {
+			evens.push(arr[i]);
+		} else {
+			odds.push(arr[i]);
+		}
+	}
+
+	if (scrollAbout === true) {
+		return;
+	} else {
+		if (Math.ceil(distance) <= -188) {
+			$(".code__l").css({ opacity: 1 });
+			tl = gsap.timeline();
+			tl.to(".sec__title", { opacity: 1, duration: 0.5 })
+				.from(evens, { opacity: 0, stagger: 0.15, duration: 1, x: 100 }, "-=.5")
+				.from(odds, { opacity: 0, stagger: 0.15, duration: 1, x: -100 }, "-=2.5");
+			scrollAbout = true;
 		}
 	}
 });

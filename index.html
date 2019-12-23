@@ -20,6 +20,7 @@
 		<!-- GSAP -->
 		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
 		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
 		<!--  -->
 
 		<title>Cruz Burgos</title>
@@ -41,7 +42,8 @@
 					<h1><a href="#welcome">Cruz Burgos</a></h1>
 				</div>
 				<div class="nav__menu">
-					<div class="nav__btn" id="open__menu">Menu</div>
+					<div class="nav__btn" id="open__menu">Menu </div>
+					
 				</div>
 			</nav>
 			<div class="hero">
@@ -50,31 +52,43 @@
 					<span class="my__name">Cruz Burgos</span>
 				</h1>
 
-				<h1 class="hero__line__two">I'm a <i>self</i> taught developer</h1>
+				<h1 class="hero__line__two">I'm a <i class="self">self-taught</i>  developer</h1>
 
 				<h1 class="hero__line__three">who enjoys <i class="_text"></i></h1>
+				
 			</div>
 		</section>
 		<section id="teleport__skill" class="skills__section">
 			<div class="skill__text">
 				<h1 class="project sec__title">Projects <span class="slash">/</span>></h1>
+				<h2 id="checkout">Check out my other projects like open source projects, animations, experiments, minigames, archived stuff
+				and more.</h2>
 			</div>
-			<div class="skills__container">
-				<div class="skill__row">
-					<div id="corre__modal" data-tilt class="project__wrapper corre__wrap">
-						<h2 class="title project__corre">Corre</h2>
-						<img src="/images/Corre.png" alt="Corre Application" />
-					</div>
-					<div id="portfolio__modal" data-tilt class="project__wrapper portfolio__wrap">
-						<h2 class="title project__portfolio">Portfolio</h2>
-						<img src="images/portfolio.png" alt="" />
-					</div>
-					<div id="ml__modal" data-tilt class="project__wrapper pose__wrap">
-						<h2 class="title project__pose">Pose Detection</h2>
-						<img src="/images/pose.png" alt="" />
-					</div>
+			<div class="lab__grid">
+				<div class="grid__item" >
+					<p id="first__grid" class="category__name">React</p>
+					<p id="corre__detail" class="stagger__one"><a aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/pose.png" alt=""></span></a></p class="stagger__one">
+					<p id="ml__detail" class="stagger__one"><a aria-label="Running Tracker">Image Recognition Game<span class="popup"><img src="/images/pose.png" alt=""></span></a></p>
+					<p id='portfolio__detail' class="stagger__one"><a aria-label="Running Tracker">Portfolio <span class="popup"><img src="/images/pose.png" alt=""></span></a></p>
+					<p class="stagger__one"><a  aria-label="Running Tracker">Snake Game<span class="popup"><img src="/images/Corre.png" alt=""></span></a></p>
 				</div>
-				<div></div>
+				<div class="grid__item">
+					<p id="second__grid" class="category__name">CodePen</p>
+					<p class="stagger__two"><a href="https://codepen.io/cburgos0511/pen/ExaZjqW" aria-label="Running Tracker">Snake Game 🐍 <span class="popup"><img src="/images/Corre.png" alt=""></span></a></p class="stagger__two">
+					<p class="stagger__two"><a href="https://codepen.io/cburgos0511/pen/PowWyGO" aria-label="Running Tracker">Visualizing Quick Sort🔥 <span class="popup"><img src="/images/Corre.png" alt=""></span></a></p>
+					<p class="stagger__two"><a href="https://codepen.io/cburgos0511/pen/NWPdLaj" aria-label="Running Tracker">Hamburger 🍔🍔🍔 <span class="popup"><img src="/images/Corre.png" alt=""></span></a></p>
+				</div>
+				<div class="grid__item">
+					<p id="third__grid" class="category__name">Experiments</p>
+					<p class="stagger__three"><a href="" aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/Corre.png"
+									alt=""></span></a></p>
+					<p class="stagger__three"><a href="" aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/Corre.png"
+									alt=""></span></a></p>
+					<p class="stagger__three"><a href="" aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/Corre.png"
+									alt=""></span></a></p>
+					<p class="stagger__three"><a href="" aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/Corre.png"
+									alt=""></span></a></p>
+				</div>
 			</div>
 			<div class="detail__view closed" id="corre__details">
 				<div class="proj__detail" id="corre__det">
@@ -193,7 +207,7 @@
 						<div class="string">
 							'I was born in Puerto Rico; A place where there is little opportunity to build a bright future. I was raised from the age of three in a single
 							parent household. At the age of fourteen I decided to move to the United States with a family member to pursue a better education and future. After
-							graduating from high school I joined theU.S Navy, as I saw that it was my best avenue into a college education. Within my four and half year
+							graduating from high school I joined the U.S Navy, as I saw that it was my best avenue into a college education. Within my four and half year
 							contract in the Armed Forces. I was put in several leadership positions wherein I learned to communicate effectively, and thrive when challenged.
 							After the military I began to attend college. While in college I decided to teach myselfprogramming to get a head start in my career. After two
 							months of hard work teaching myself how toprogram. I decided to apply for an internship position at Aviture. I was accepted for the position, and
@@ -272,6 +286,39 @@
 					<div class="get__in__touch">Get in touch</div>
 				</div>
 			</div>
+			<div class="touch__modal closed">
+				<div id="nav-icon1">
+					<span></span>
+					<span></span>
+				</div>
+				<div class="modal__content">
+
+					<div class="header__touch">
+						<h1>Get In Touch</h1>
+					</div>
+					<form onsubmit='' autocomplete="off" method='POST' action="send_script.php">
+						<div class="input__wrap">
+							<label  class="labels" for="name">Name </label>
+							<input autocomplete="off" class="input" type="text" name="name">
+						</div class="input__wrap">
+						<div class="input__wrap">
+							<label class="labels" for="email">Email </label>
+							<input autocomplete="off" class="input" type="email" name="email">
+						</div>
+						<div class="input__wrap">
+							<label class="labels" for="subject">Subject </label>
+							<input autocomplete="off" class="input" type="text" name="subject">
+						</div>
+						<div class="input__wrap">
+							<label class="labels" for="msg">Message</label>
+							<input autocomplete="off" class="input" type="text" name="msg"></input>
+						</div>
+						
+						<button type="submit" name="send_message_btn">Send</button>
+					</form>
+				</div>
+
+			</div>
 		</section>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
@@ -279,6 +326,6 @@
 		<script src="./scripts/scripts.js"></script>
 		<script src="./scripts/scrollMagic.js"></script>
 		<script src="./scripts/textScramble.js"></script>
+		<script src="./scripts/send_script.php"></script>
 	</body>
 </html>
-<!--  -->

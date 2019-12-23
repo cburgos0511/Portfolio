@@ -25,6 +25,7 @@
 	position: relative;
 	padding-left: 22%;
 	height: 1.8rem;
+	opacity: 0;
 }
 
 .code__l:hover {
@@ -32,49 +33,40 @@
 }
 
 .comment {
-	font-family: Roboto Mono, Courier New, Courier, monospace;
 	color: #a3a3a386;
 }
 
 .dots {
-	font-family: Roboto Mono, Courier New, Courier, monospace;
 	color: #a7a7a74b;
 	letter-spacing: 4px;
 	font-size: 0.9rem;
 }
 
 .methods {
-	font-family: Roboto Mono, Courier New, Courier, monospace;
 	color: #2e2bb8;
 }
 .proname {
-	font-family: Roboto Mono, Courier New, Courier, monospace;
 	color: #eeff31;
 }
 
 .regular {
-	font-family: Roboto Mono, Courier New, Courier, monospace;
 	color: #f9f9f9;
 }
 
 .scope {
-	font-family: Roboto Mono, Courier New, Courier, monospace;
 	color: #e3244c;
 	display: inline;
 }
 
 .var {
-	font-family: Roboto Mono, Courier New, Courier, monospace;
 	color: #24e394;
 }
 
 .number {
-	font-family: Roboto Mono, Courier New, Courier, monospace;
 	color: #e39d24;
 }
 
 .string {
-	font-family: Roboto Mono, Courier New, Courier, monospace;
 	color: #24e33a;
 }
 
@@ -84,7 +76,6 @@
 	height: auto;
 }
 .code__num {
-	font-family: Roboto Mono, Courier New, Courier, monospace;
 	font-size: 1.2rem;
 	position: absolute;
 	left: 18%;

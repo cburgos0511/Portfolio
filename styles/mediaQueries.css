@@ -1,66 +1,98 @@
-@media screen and (max-width: 768px) {
-	.hero {
-		position: relative;
-		font-weight: 700;
-		top: 40%;
-		height: 15%;
-		padding: 0 10rem;
-		width: 600px;
-		font-size: 1.6rem;
-		z-index: 10;
-	}
-	.my__name {
-		font-size: 2.2rem;
-		text-shadow: 3px 5px 3px rgba(63, 63, 63, 0.247);
-	}
-
-	.welcome h1 {
-		position: absolute;
-		font-size: 3rem;
-		top: 41%;
-		left: 15%;
-		letter-spacing: 2rem;
-		background: #fff;
-	}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	/* Styles */
 }
 
-@media screen and (min-width: 992px) {
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+	/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+	/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+} */
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 	.timeline {
-		height: 412%;
+		height: 365%;
+	}
+	.section__welcome {
+		width: 139%;
+	}
+	.hero {
+		font-size: 1.5rem;
+	}
+	.my__name {
+		font-size: 2.5rem;
+	}
+
+	.sec__title::before {
+		left: -12%;
+	}
+
+	.skills__section {
+		width: 114%;
+	}
+
+	.code__l {
+		padding-left: 21%;
+	}
+	.code__num {
+		left: 17.5%;
+		font-size: 1rem;
+	}
+	.dots {
+		font-size: 0.6rem;
+		letter-spacing: 2px;
+	}
+	.code__wrap {
+		font-size: 1rem;
+		margin: 1px;
+	}
+	.section__about {
+		width: 140%;
+	}
+	.contact__section {
+		width: 140%;
+		height: 75%;
+	}
+	.contain {
+		position: relative;
+		padding-top: 5rem;
+	}
+}
+/* Styles */
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	/* Styles */
+
+	.contact__section {
+		width: 141%;
+	}
+	.section__about {
+		width: 141%;
+	}
+	.contact__section {
+		width: 141%;
+	}
+	.section__welcome {
+		width: 141%;
+	}
+	.timeline {
+		height: 200%;
 	}
 	.sec__title::before {
 		left: -7%;
 	}
-	.corre__wrap {
-		width: 65%;
-		left: 15%;
-		top: 15%;
-	}
-	.portfolio__wrap,
-	.pose__wrap {
-		width: 22%;
-	}
 
-	.portfolio__wrap {
-		top: 55%;
-		right: 35%;
-	}
-	.pose__wrap {
-		top: 35%;
-		right: 5%;
-	}
-	.project__pose {
-		top: 10%;
-	}
-
-	.project__corre {
-		top: 10%;
-	}
-
-	.project__portfolio {
-		top: 30%;
-		left: -18%;
-	}
 	.nav__opened ul li a {
 		font-size: 5.5rem;
 	}
@@ -77,38 +109,87 @@
 		font-size: 1.2rem;
 		line-height: 1.6rem;
 	}
+	.timeline {
+		height: 400%;
+	}
+	.contact__container h2 a {
+		font-size: 1.2em;
+	}
+	.sec__title::before {
+		left: -11.7%;
+	}
+	.code__num {
+		left: 17.5%;
+		font-size: 1rem;
+	}
+	.lab__grid {
+		left: 20%;
+	}
+	#checkout {
+		left: 32%;
+	}
+	.project {
+		left: 30.7%;
+		width: 8em;
+	}
+
+	.contact__section {
+		width: 140%;
+		height: 75%;
+	}
+	.contain {
+		position: relative;
+		padding-top: 5rem;
+	}
 }
 
-@media screen and (min-width: 1200px) {
-	.corre__wrap {
-		width: 75%;
-		left: 25%;
-		top: 25%;
-	}
-	.project__corre {
-		top: 8%;
-	}
-
-	.project__portfolio {
-		top: 35%;
-		width: 80%;
-		left: -24%;
-	}
-
-	.project__pose {
-		width: 80%;
-		left: -20%;
-	}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+	/* Styles */
 	.big__sor {
 		position: relative;
 		width: auto;
 		height: auto;
 	}
 	.timeline {
-		height: 394%;
+		height: 348%;
+	}
+	.sec__title::before {
+		left: -11.2%;
 	}
 
-	.sec__title::before {
-		left: -6.5%;
+	.code__l {
+		padding-left: 21%;
 	}
+	.code__num {
+		left: 17.5%;
+		font-size: 1rem;
+	}
+	.dots {
+		font-size: 0.6rem;
+		letter-spacing: 2px;
+	}
+	.code__wrap {
+		font-size: 1rem;
+	}
+	.contact__container h2 a {
+		font-size: 1.2em;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+	/* Styles */
+	.sec__title::before {
+		left: -11%;
+	}
+
+	.timeline {
+		height: 348%;
+	}
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+	/* Styles */
 }

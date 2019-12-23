@@ -1,7 +1,7 @@
 @import "./variables.css";
 
 * {
-	font-family: "Cormorant Garamond", serif;
+	font-family: Roboto Mono, Courier New, Courier, monospace;
 	backface-visibility: hidden;
 }
 
@@ -55,8 +55,10 @@ img {
 	animation: heroAnim1 0.8s 1s normal both, firstBlinker1 0.8s 1s cubic-bezier(1, -0.01, 0.67, 0.11);
 	overflow: hidden;
 	white-space: nowrap;
+	font-family: "Cormorant Garamond", serif;
 }
 .hero__line__two {
+	font-family: "Cormorant Garamond", serif;
 	border-right: 4px solid transparent;
 	height: 4rem;
 	padding-top: 2px 0 0 4px;
@@ -65,6 +67,7 @@ img {
 	white-space: nowrap;
 }
 .hero__line__three {
+	font-family: "Cormorant Garamond", serif;
 	border-right: 4px solid transparent;
 	height: 4rem;
 	padding-top: 2px 0 0 4px;
@@ -132,10 +135,11 @@ h1 {
 	position: relative;
 	font-size: 1.5rem;
 	color: var(--sec-title) !important;
-	left: 21%;
+	left: 22%;
 	top: 50px;
 	width: 20%;
 	font-weight: 300;
+	opacity: 0;
 }
 
 .sec__title::before {
@@ -150,8 +154,12 @@ h1 {
 	top: 30%;
 	left: -6%;
 }
-
+.self,
+._text {
+	font-family: "Cormorant Garamond", serif;
+}
 .my__name {
+	font-family: "Cormorant Garamond", serif;
 	font-size: 3.1rem;
 	font-weight: 700;
 	color: var(--timeline);
@@ -173,4 +181,3 @@ h1 {
 	border-radius: 50%;
 	top: 36%;
 }
-
