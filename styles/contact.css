@@ -92,6 +92,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 .header__touch {
@@ -174,4 +175,50 @@ form .input {
 #nav-icon1 span:nth-child(2) {
 	top: 18px;
 	transform: rotate(-135deg);
+}
+
+.send__email {
+	text-transform: uppercase;
+	border: none;
+	background: linear-gradient(to right, rgb(32, 121, 255), rgb(35, 101, 175));
+	width: 7em;
+	height: 2.3em;
+	font-weight: 400;
+	text-align: center;
+	margin: 0;
+	padding-top: 0;
+	border-radius: 50px;
+	color: rgb(255, 255, 255);
+	font-size: 2.2em;
+	box-shadow: 3px 4px 31px 10px rgba(14, 14, 14, 0.5);
+	transform: scale(0.95);
+	transition: all 200ms ease-in-out;
+	animation: pulse 5s infinite normal;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		box-shadow: 3px -4px 31px 10px rgba(107, 107, 107, 0.445);
+	}
+	20% {
+		transform: scale(0.95);
+		box-shadow: 2px 2px 31px 10px rgba(46, 46, 46, 0.171);
+	}
+	40% {
+		transform: scale(1);
+		box-shadow: 3px -4px 31px 10px rgba(56, 56, 56, 0.514);
+	}
+	60% {
+		transform: scale(0.95);
+		box-shadow: 2px 2px 31px 10px rgba(133, 133, 133, 0.171);
+	}
+	80% {
+		transform: scale(1);
+		box-shadow: 3px -4px 31px 10px rgba(32, 32, 32, 0.514);
+	}
+	100% {
+		transform: scale(0.95);
+		box-shadow: 2px 2px 31px 10px rgba(36, 36, 36, 0.171);
+	}
 }

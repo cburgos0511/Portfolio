@@ -35,6 +35,15 @@ img {
 	background-size: cover;
 	z-index: 5;
 }
+h2 {
+	display: block;
+	font-size: 1.5em;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: none;
+}
 
 .hero {
 	position: relative;
