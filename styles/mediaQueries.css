@@ -383,10 +383,6 @@
 		width: 8em;
 	}
 
-	.contact__section {
-		width: 140%;
-		height: 75%;
-	}
 	.contain {
 		position: relative;
 		padding-top: 5rem;
@@ -395,6 +391,9 @@
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
+	.skills__section {
+		height: 850px;
+	}
 	/* Styles */
 	.big__sor {
 		position: relative;
@@ -402,7 +401,7 @@
 		height: auto;
 	}
 	.timeline {
-		height: 348%;
+		height: 425%;
 	}
 	.sec__title::before {
 		left: -11.2%;
