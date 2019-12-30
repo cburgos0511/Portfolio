@@ -144,8 +144,8 @@ h1 {
 	position: relative;
 	font-size: 1.5rem;
 	color: var(--sec-title) !important;
-	left: 22%;
 	top: 50px;
+	padding-left: 22%;
 	width: 20%;
 	font-weight: 300;
 	opacity: 0;
@@ -161,6 +161,7 @@ h1 {
 	background: var(--main-bg-color);
 	z-index: 5;
 	top: 30%;
+	margin-left: 58%;
 	left: -6%;
 }
 .self,
@@ -183,10 +184,24 @@ h1 {
 .timeline {
 	position: absolute;
 	width: 2px;
-	height: 362%;
+	height: 100%;
 	background: var(--timeline);
 	z-index: 4;
 	left: 20%;
 	border-radius: 50%;
 	top: 36%;
+}
+
+.timeline__alt {
+	position: absolute;
+	width: 2px;
+	height: 110%;
+	background: var(--timeline);
+	z-index: 4;
+	left: 20%;
+	border-radius: 50%;
+	top: 0%;
+}
+.head__text {
+	position: relative;
 }

@@ -3,27 +3,14 @@
 	height: 85vh;
 }
 
-/* .contact__text {
-	position: absolute;
-	left: 50%;
-	top: 10%;
-	transform: translate(-50%);
-}
-
-.contact__text h1 {
-	width: auto;
-	height: auto;
-	color: #929292;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-	opacity: 0;
-	position: relative;
-	top: 50px;
-} */
-
 .contain {
 	position: absolute;
 	top: 30%;
 	left: 22%;
+	width: 75%;
+}
+.contact__info {
+	width: 75%;
 }
 .contact__container {
 	display: grid;
@@ -41,7 +28,7 @@
 	color: var(--main-font-color);
 	position: relative;
 	left: -50px;
-	opacity: 1;
+	opacity: 0;
 	font-weight: 100;
 }
 .contact__container h2 {
@@ -62,13 +49,14 @@
 	height: 2em;
 	font-weight: 400;
 	text-align: center;
-	margin: 0;
+	margin-top: 5rem;
 	padding-top: 0.7em;
 	border-radius: 50px;
 	color: rgb(255, 255, 255);
 	font-size: 1.2em;
 	box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.1);
 	transition: all 200ms ease-in-out;
+	margin-bottom: 2rem;
 	opacity: 0;
 }
 .get__in__touch:hover {
@@ -77,6 +65,7 @@
 }
 
 .touch__modal {
+	overflow-y: hidden;
 	position: fixed;
 	top: -50px;
 	left: 0%;

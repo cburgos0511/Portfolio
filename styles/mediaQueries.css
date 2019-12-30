@@ -44,8 +44,7 @@
 		font-size: 1.05rem;
 	}
 	.skills__section {
-		height: 900px;
-		overflow: hidden;
+		height: 305vh;
 	}
 	.sec__title {
 		padding-left: 1rem;
@@ -221,52 +220,199 @@
 		height: 20px;
 		margin-bottom: 10px;
 	}
+	.visit {
+		margin: auto;
+		width: 2.5em;
+		height: 1.5em;
+		font-size: 1rem;
+	}
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
 	.logo {
-		font-size: 2rem;
+		padding-left: 1rem;
+		font-size: 1.4rem;
 	}
 	.nav__btn {
-		font-size: 2rem;
+		width: 0.8rem;
+		font-size: 1.4rem;
 	}
 	#open__menu::before {
 		right: 120%;
 	}
-	.contact__section {
-		width: 350%;
-		height: 700px;
+	.timeline {
+		height: 100%;
 	}
-	.section__about {
-		width: 350%;
+	.timeline,
+	.timeline__alt {
+		left: 10%;
 	}
 	.section__welcome {
-		width: 350%;
+		width: 100%;
 	}
-	.skills__section {
-		height: 1200px;
+	.hero {
+		margin-left: 2.5rem;
+		left: 0;
+		width: 280px;
+	}
+	.hero__line__one,
+	.hero__line__two,
+	.hero__line__three {
+		font-size: 1.5rem;
+	}
+	@keyframes heroAnim1 {
+		from {
+			width: 0px;
+		}
+		to {
+			width: 290px;
+		}
+	}
+	@keyframes heroAnim2 {
+		from {
+			width: 0px;
+		}
+		to {
+			width: 300px;
+		}
+	}
+	@keyframes heroAnim3 {
+		from {
+			width: 0px;
+		}
+		to {
+			width: 300px;
+		}
+	}
+	.my__name {
+		font-size: 1.55rem;
+	}
+	.sec__title {
+		width: 70%;
 	}
 	.sec__title::before {
-		left: -12%;
+		left: -13%;
+		margin-left: 20.5%;
 	}
-	.nav__opened {
-		height: 1000px;
+
+	.skills__section {
+		width: 100%;
+		height: 205vh;
 	}
-	.nav__opened ul {
-		top: 40%;
+
+	.code__l {
+		padding-left: 13%;
+		width: auto;
+		height: auto;
 	}
-	.close__btn::before {
-		right: 120%;
+	.code__num {
+		left: 1.5%;
+		font-size: 1rem;
 	}
-	.close__btn::after {
-		right: 165%;
+	.dots {
+		font-size: 0.6rem;
+		letter-spacing: 2px;
+	}
+	.code__wrap {
+		font-size: 1rem;
+		margin-left: 4px;
+	}
+	.section__about {
+		width: 100%;
+	}
+	.contact__section {
+		width: 100%;
+		height: 75%;
+	}
+	.contain {
+		position: relative;
+		padding-top: 5rem;
+	}
+	#checkout {
+		left: 22%;
+		font-size: 1.1rem;
+		margin: 2rem 0 2rem 0;
+	}
+	.arrow {
+		width: 50px;
+		height: 20px;
+		margin-bottom: 10px;
+	}
+	.proj__detail h1 {
+		font-size: 1.2rem;
+	}
+
+	.proj__detail h2 {
+		font-size: 0.9rem;
+		margin-bottom: 1rem;
+	}
+
+	.proj__detail p {
+		font-size: 0.9rem;
+		line-height: 1.2rem;
+	}
+	.proj__detail {
+		width: 88%;
+	}
+	.contact__container {
+		display: block;
+		padding-top: 1rem;
+	}
+	.contact__container h2 {
+		font-size: 0.8rem;
+		padding-bottom: 1rem;
+		margin-left: -2rem;
+	}
+	.get__in__touch {
+		border-radius: 50px;
+		font-size: 1em;
+		margin: auto 0 2rem -2rem;
+	}
+	.find__me {
+		font-size: 1.4em;
+		margin-left: -2rem;
+	}
+	.contain {
+		width: 50%;
+		left: 0;
+		padding-left: 5rem;
+	}
+	.category__name {
+		font-size: 2rem;
+	}
+	.nav__opened ul li a {
+		font-size: 3.6rem;
+	}
+	.lab__grid {
+		margin-top: 3rem;
+		flex-direction: column;
+		width: 100%;
+		left: 0;
+		top: 18%;
+	}
+	.visit {
+		margin-left: 40%;
+		margin-bottom: 5rem;
+		width: 4.5em;
+		height: 1.8em;
+		font-size: 1.3rem;
+	}
+	.header__touch h1 {
+		margin-top: 1rem;
+		font-size: 1.6rem;
+	}
+	form .input {
+		font-size: 1rem;
+	}
+	#nav-icon1 {
+		margin: 5px 5px;
+	}
+	.send__email {
+		font-size: 1.5em;
+		width: 5em;
+		height: 1.8em;
 	}
 }
-
-/* iPads (portrait and landscape) ----------- */
-/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-
-} */
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -274,28 +420,36 @@
 		height: 365%;
 	}
 	.section__welcome {
-		width: 139%;
+		width: 100%;
 	}
 	.hero {
-		font-size: 1.5rem;
+		width: 400px;
+	}
+	.hero__line__one,
+	.hero__line__two,
+	.hero__line__three {
+		font-size: 2rem;
 	}
 	.my__name {
-		font-size: 2.5rem;
+		font-size: 2.15rem;
 	}
-
+	.sec__title {
+		width: 24%;
+	}
 	.sec__title::before {
-		left: -12%;
+		left: -13%;
+		margin-left: 53.5%;
 	}
 
 	.skills__section {
-		width: 114%;
+		width: 100%;
 	}
 
 	.code__l {
 		padding-left: 21%;
 	}
 	.code__num {
-		left: 17.5%;
+		left: 16.5%;
 		font-size: 1rem;
 	}
 	.dots {
@@ -307,15 +461,66 @@
 		margin: 1px;
 	}
 	.section__about {
-		width: 140%;
+		width: 100%;
 	}
 	.contact__section {
-		width: 140%;
+		width: 100%;
 		height: 75%;
 	}
 	.contain {
 		position: relative;
 		padding-top: 5rem;
+	}
+	#checkout {
+		left: 22%;
+		font-size: 1.1rem;
+		margin: 2rem 0 2rem 0;
+	}
+	.proj__detail h1 {
+		font-size: 1.8rem;
+	}
+
+	.proj__detail h2 {
+		font-size: 1.4rem;
+		margin-bottom: 1rem;
+	}
+
+	.proj__detail p {
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+	}
+	.proj__detail {
+		width: 90%;
+	}
+	.contact__container {
+		display: block;
+		padding: 1rem;
+	}
+	.contact__container h2 {
+		font-size: 0.8rem;
+		padding-left: 3rem;
+		padding-bottom: 1rem;
+	}
+	.get__in__touch {
+		border-radius: 50px;
+		font-size: 1em;
+		margin: auto 0 5rem 3.5rem;
+	}
+	.find__me {
+		font-size: 1.4em;
+		margin: auto;
+		padding-left: 3.5rem;
+	}
+	.contain {
+		width: 50%;
+		left: 0;
+		padding-left: 10rem;
+	}
+	.category__name {
+		font-size: 2rem;
+	}
+	.nav__opened ul li a {
+		font-size: 5.5rem;
 	}
 }
 /* Styles */
@@ -325,24 +530,23 @@
 	/* Styles */
 
 	.contact__section {
-		width: 141%;
+		width: 100%;
+	}
+	.skills__section {
+		width: 100%;
 	}
 	.section__about {
-		width: 141%;
-	}
-	.contact__section {
-		width: 141%;
+		width: 100%;
 	}
 	.section__welcome {
-		width: 241%;
+		width: 100%;
 	}
 	.timeline {
 		height: 200%;
 	}
-	.sec__title::before {
-		left: -7%;
+	.editor {
+		top: 20%;
 	}
-
 	.nav__opened ul li a {
 		font-size: 5.5rem;
 	}
@@ -359,9 +563,6 @@
 		font-size: 1.2rem;
 		line-height: 1.6rem;
 	}
-	.timeline {
-		height: 400%;
-	}
 	.contact__container h2 a {
 		font-size: 1.2em;
 	}
@@ -375,67 +576,109 @@
 	.lab__grid {
 		left: 20%;
 	}
-	#checkout {
-		left: 32%;
+
+	.code__wrap {
+		font-size: 1.1rem;
 	}
-	.project {
-		left: 30.7%;
-		width: 8em;
+	#checkout {
+		left: 22%;
+		font-size: 1.1rem;
+		margin: 2rem 0 2rem 0;
 	}
 
 	.contain {
 		position: relative;
-		padding-top: 5rem;
+		padding-top: 0rem;
+	}
+	.proj__detail h1 {
+		font-size: 1.3rem;
+	}
+
+	.proj__detail h2 {
+		font-size: 0.95rem;
+	}
+
+	.proj__detail p {
+		font-size: 0.99rem;
+		line-height: 1.4rem;
+	}
+
+	.get__in__touch {
+		border-radius: 50px;
+		font-size: 1em;
+		margin: auto 0 5rem 3.5rem;
 	}
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 1224px) and (max-width: 1824px) {
 	.skills__section {
 		height: 850px;
 	}
 	/* Styles */
+
+	.contact__section {
+		height: 60vh;
+	}
 	.big__sor {
 		position: relative;
 		width: auto;
 		height: auto;
 	}
 	.timeline {
-		height: 425%;
+		height: 70%;
 	}
+
 	.sec__title::before {
-		left: -11.2%;
+		left: -11.5%;
 	}
 
 	.code__l {
 		padding-left: 21%;
 	}
+
 	.code__num {
 		left: 17.5%;
-		font-size: 1rem;
+		font-size: 1.1rem;
 	}
+
 	.dots {
-		font-size: 0.6rem;
+		font-size: 0.9rem;
 		letter-spacing: 2px;
 	}
+
 	.code__wrap {
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
+
 	.contact__container h2 a {
 		font-size: 1.2em;
 	}
-}
 
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-	/* Styles */
 	.sec__title::before {
-		left: -11%;
+		left: -11.2%;
 	}
 
-	.timeline {
-		height: 348%;
+	.proj__detail h1 {
+		font-size: 1.5rem;
 	}
+
+	.proj__detail h2 {
+		font-size: 1.1rem;
+	}
+
+	.proj__detail p {
+		font-size: 1.1rem;
+		line-height: 1.5rem;
+	}
+	#checkout {
+		margin-top: 3rem;
+	}
+}
+@media only screen and (max-width: 2100px) {
+}
+.sec__title::before {
+	left: -11%;
 }
 
 /* iPhone 4 ----------- */

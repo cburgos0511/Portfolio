@@ -50,7 +50,7 @@ document.getElementById("close__menu").onclick = () => {
 /* LAB */
 
 $(document).mousemove(function(e) {
-	if (e.pageX < 550) {
+	if (e.pageX < 750) {
 		$(".popup").css({ left: e.pageX - 300 });
 	} else {
 		$(".popup").css({ left: e.pageX - 700 });

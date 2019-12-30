@@ -3,7 +3,7 @@
 .skills__section {
 	position: relative;
 	height: 100vh;
-	width: 100%;
+	overflow: visible;
 }
 .skill__detail__open {
 	background-color: #00000028;
@@ -80,6 +80,7 @@
 }
 
 .visit {
+	position: relative;
 	cursor: crosshair;
 	outline: none;
 	text-transform: uppercase;
@@ -145,7 +146,7 @@
 /* LAB */
 
 #checkout {
-	position: relative;
+	position: absolute;
 	margin-bottom: 8rem;
 	font-size: 1.5rem;
 	color: #fff;
@@ -161,14 +162,15 @@
 	left: 11%;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
-	max-height: 540px;
+	flex-direction: row;
+	max-height: auto;
 	width: 50%;
 	padding: 0;
 	color: #988e9f;
 	font-weight: 300;
 	font-size: 18px;
-	margin: 30px 0 60px;
+	top: 30%;
+	/* margin: 40px 0 60px; */
 }
 .lab__grid p {
 	margin: 1rem 1rem;
