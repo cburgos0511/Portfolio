@@ -147,13 +147,10 @@ document.getElementById("close__menu").addEventListener("click", () => {
 });
 
 /* Responsive */
-
-$(window).resize(function() {
-	let windowW = $(window).width();
-	let windowH = $(window).height();
-	if (windowW < 800) {
-		$(".logo")[0].innerText = "Cruz";
-	} else {
-		$(".logo")[0].innerText = "Cruz Burgos";
-	}
-});
+let windowW = $(window).width();
+let windowH = $(window).height();
+if (windowW < 800) {
+	$(".logo")[0].innerText = "Cruz";
+} else {
+	$(".logo")[0].innerText = "Cruz Burgos";
+}
