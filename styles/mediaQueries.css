@@ -44,7 +44,7 @@
 		font-size: 1.05rem;
 	}
 	.skills__section {
-		height: 305vh;
+		height: 205vh;
 	}
 	.sec__title {
 		padding-left: 1rem;
@@ -292,12 +292,12 @@
 	}
 	.sec__title::before {
 		left: -13%;
-		margin-left: 20.5%;
+		margin-left: 20.9%;
 	}
 
 	.skills__section {
 		width: 100%;
-		height: 205vh;
+		height: 150vh;
 	}
 
 	.code__l {
