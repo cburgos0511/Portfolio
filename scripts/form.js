@@ -10,7 +10,7 @@ $(document).ready(() => {
 		let statusEl = $(".status");
 		statusEl.empty();
 
-		if (email.length < 5 && email.includes("@" && email.includes("."))) {
+		if (email.length > 5 && email.includes("@" && email.includes("."))) {
 			statusEl.append("<div>Email good</div>");
 		} else {
 			event.preventDefault();
