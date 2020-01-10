@@ -17,21 +17,21 @@ $(document).ready(() => {
 			event.preventDefault();
 		}
 
-		if (name > 2) {
+		if (name.length > 2) {
 			statusEl.append("<div>Name good</div>");
 		} else {
 			statusEl.append("<div>Name not good</div>");
 			event.preventDefault();
 		}
 
-		if (subject > 2) {
+		if (subject.length > 2) {
 			statusEl.append("<div>Subject good</div>");
 		} else {
 			statusEl.append("<div>Subject not good</div>");
 			event.preventDefault();
 		}
 
-		if (msg > 15) {
+		if (msg.length > 15) {
 			statusEl.append("<div>Msg good</div>");
 		} else {
 			statusEl.append("<div>Msg not good</div>");
