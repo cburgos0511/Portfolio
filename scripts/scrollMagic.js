@@ -90,17 +90,7 @@ window.addEventListener("scroll", () => {
 		elementOffset = $(".sec__title").offset().top,
 		distance = elementOffset - scrollTop;
 
-	let evens = [];
-	let odds = [];
 	let arr = document.querySelectorAll(".code__l");
-
-	for (let i = 0; i < arr.length; i++) {
-		if (i % 2 === 0) {
-			evens.push(arr[i]);
-		} else {
-			odds.push(arr[i]);
-		}
-	}
 
 	if (scrollAbout === true) {
 		return;
@@ -108,9 +98,7 @@ window.addEventListener("scroll", () => {
 		if (Math.ceil(distance) <= -188) {
 			$(".code__l").css({ opacity: 1 });
 			tl = gsap.timeline();
-			tl.to(".sec__title", { opacity: 1, duration: 0.5 })
-				.from(evens, { opacity: 0, stagger: 0.15, duration: 1, x: 100 }, "-=.5")
-				.from(odds, { opacity: 0, stagger: 0.15, duration: 1, x: -100 }, "-=2.5");
+			tl.to(".sec__title", { opacity: 1, duration: 0.5 }).from(arr, { opacity: 0, stagger: 0.15, duration: 1, x: 100 }, "-=.5");
 			scrollAbout = true;
 		}
 	}
@@ -126,7 +114,7 @@ window.addEventListener("scroll", () => {
 		return;
 	} else {
 		if (Math.ceil(distance) <= 811) {
-			gsap.to(".contact", { opacity: 1, duration: 1.8 });
+			gsap.to(".contact", { opacity: 1, duration: 1 });
 			scrollContact = true;
 		}
 	}
@@ -140,7 +128,7 @@ window.addEventListener("scroll", () => {
 		return;
 	} else {
 		if (Math.ceil(distance) <= 824) {
-			gsap.to(".find__me", { opacity: 1, duration: 1.8, x: 50 });
+			gsap.to(".find__me", { opacity: 1, duration: 1.8, y: -50 });
 			scrollFindMe = true;
 		}
 	}

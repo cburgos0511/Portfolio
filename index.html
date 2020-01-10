@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -68,26 +70,26 @@
 			<div class="lab__grid">
 				<div class="grid__item" >
 					<p id="first__grid" class="category__name">React</p>
-					<p id="corre__detail" class="stagger__one"><a aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/pose.png" alt=""></span></a></p class="stagger__one">
+					<p id="corre__detail" class="stagger__one"><a aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/Corre.jpg" alt=""></span></a></p class="stagger__one">
 					<p id="ml__detail" class="stagger__one"><a aria-label="Running Tracker">Image Recognition Game<span class="popup"><img src="/images/pose.png" alt=""></span></a></p>
-					<p id='portfolio__detail' class="stagger__one"><a aria-label="Running Tracker">Portfolio <span class="popup"><img src="/images/pose.png" alt=""></span></a></p>
-					<p class="stagger__one"><a  aria-label="Running Tracker">Snake Game<span class="popup"><img src="/images/Corre.png" alt=""></span></a></p>
+					<p id='portfolio__detail' class="stagger__one"><a aria-label="Running Tracker">Portfolio <span class="popup"><img src="/images/portfolio.png" alt=""></span></a></p>
+					<p class="stagger__one"><a  aria-label="Running Tracker">Snake Game<span class="popup"><img src="/images/React_snake.png" alt=""></span></a></p>
 				</div>
 				<div class="grid__item">
 					<p id="second__grid" class="category__name">CodePen</p>
-					<p class="stagger__two"><a href="https://codepen.io/cburgos0511/pen/ExaZjqW" aria-label="Running Tracker">Snake Game 🐍 <span class="popup"><img src="/images/Corre.png" alt=""></span></a></p class="stagger__two">
-					<p class="stagger__two"><a href="https://codepen.io/cburgos0511/pen/PowWyGO" aria-label="Running Tracker">Visualizing Quick Sort🔥 <span class="popup"><img src="/images/Corre.png" alt=""></span></a></p>
-					<p class="stagger__two"><a href="https://codepen.io/cburgos0511/pen/NWPdLaj" aria-label="Running Tracker">Hamburger 🍔🍔🍔 <span class="popup"><img src="/images/Corre.png" alt=""></span></a></p>
+					<p class="stagger__two"><a href="https://codepen.io/cburgos0511/pen/ExaZjqW" aria-label="Running Tracker">Snake Game 🐍 <span class="popup"><img src="/images/snake-pen.png" alt=""></span></a></p class="stagger__two">
+					<p class="stagger__two"><a href="https://codepen.io/cburgos0511/pen/PowWyGO" aria-label="Running Tracker">Visualizing Quick Sort🔥 <span class="popup"><img src="/images/quicksort.png" alt=""></span></a></p>
+					<p class="stagger__two"><a href="https://codepen.io/cburgos0511/pen/NWPdLaj" aria-label="Running Tracker">Hamburger 🍔🍔🍔 <span class="popup"><img src="/images/hamburger.png" alt=""></span></a></p>
 				</div>
 				<div class="grid__item">
 					<p id="third__grid" class="category__name">Experiments</p>
-					<p class="stagger__three"><a href="" aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/Corre.png"
+					<p class="stagger__three"><a href="" aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/Corre.jpg"
 									alt=""></span></a></p>
-					<p class="stagger__three"><a href="" aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/Corre.png"
+					<p class="stagger__three"><a href="" aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/Corre.jpg"
 									alt=""></span></a></p>
-					<p class="stagger__three"><a href="" aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/Corre.png"
+					<p class="stagger__three"><a href="" aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/Corre.jpg"
 									alt=""></span></a></p>
-					<p class="stagger__three"><a href="" aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/Corre.png"
+					<p class="stagger__three"><a href="" aria-label="Running Tracker">Running Tracker <span class="popup"><img src="/images/Corre.jpg"
 									alt=""></span></a></p>
 				</div>
 			</div>
@@ -300,24 +302,24 @@
 					<div class="header__touch">
 						<h1>Get In Touch</h1>
 					</div>
-					<form onsubmit='' autocomplete="off" method='POST' action="send_script.php">
+					<form autocomplete="off" method='POST' action='https://formspree.io/cruzburgos44@gmail.com''>
 						<div class="input__wrap">
 							<label  class="labels" for="name">Name </label>
-							<input autocomplete="off" class="input" type="text" name="name">
+							<input autocomplete="off" class="input nname" type="text" name="name">
 						</div class="input__wrap">
 						<div class="input__wrap">
 							<label class="labels" for="email">Email </label>
-							<input autocomplete="off" class="input" type="email" name="email">
+							<input autocomplete="off" class="input email" type="email" name="email">
 						</div>
 						<div class="input__wrap">
 							<label class="labels" for="subject">Subject </label>
-							<input autocomplete="off" class="input" type="text" name="subject">
+							<input autocomplete="off" class="input subject" type="text" name="subject">
 						</div>
 						<div class="input__wrap">
 							<label class="labels" for="msg">Message</label>
-							<input autocomplete="off" class="input" type="text" name="msg"></input>
+							<input autocomplete="off" class="input message" type="text" name="msg"></input>
 						</div>
-						
+						<div class="status"></div>
 						<button class="send__email" type="submit" name="send_message_btn">Send</button>
 					</form>
 				</div>
@@ -330,6 +332,6 @@
 		<script src="./scripts/scripts.js"></script>
 		<script src="./scripts/scrollMagic.js"></script>
 		<script src="./scripts/textScramble.js"></script>
-		<script src="./scripts/send_script.php"></script>
+		<script src="./scripts/form.js"></script>
 	</body>
 </html>
