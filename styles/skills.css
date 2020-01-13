@@ -80,6 +80,7 @@
 }
 
 .visit {
+	text-decoration: none;
 	position: relative;
 	cursor: crosshair;
 	outline: none;
@@ -90,8 +91,8 @@
 	height: 2em;
 	font-weight: 300;
 	text-align: center;
-	margin-top: 2rem;
-	padding-top: 0.1em;
+	margin-top: 3rem;
+	padding: 0.3em;
 	border-radius: 50px;
 	color: rgb(255, 255, 255);
 	font-size: 1.6em;
